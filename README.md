@@ -68,4 +68,10 @@ The List Detail page is `pushed` to by the List Master, to view or edit a specif
 
 The Map page renders a Map, (currently Google maps), using either the JS maps or native Google Maps if desired.
 
+## Providers
 
+The Super Starter comes with some basic implementations of common providers.
+
+### User
+
+The `User` provider is used to authenticate users through its `login(accountInfo)` and `signup(accountInfo)` methods, which perform `POST` requests to an API endpoint that you will need to configure.
