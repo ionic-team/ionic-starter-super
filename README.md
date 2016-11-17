@@ -11,7 +11,7 @@ Get from zero to app store 1000x faster with pre-built pages and best practices 
 
 The Super Starter comes with a variety of ready-made pages. These pages help you assemble common building blocks for your app so you can focus on your unique features and branding.
 
-We encourage you to pick the pages you wish to use and remove the ones you don't.
+We encourage you to pick the pages you wish to use and remove the ones you don't. If you'd rather start with a blank slate, we recommend using our `blank` starter instead.
 
 Angular requires every page to be defined in the module for the app. To make this easy, all page configuration happens in `src/pages/pages.ts`. Here's an example of what this file looks like:
 
