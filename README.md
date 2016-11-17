@@ -2,16 +2,15 @@ __WORK IN PROGRESS, NOT READY FOR USE__
 
 # The Ionic Super Starter 🎮
 
-This is a batteries-included, all-you-can-eat, one-stop-shop, soup-to-nuts starter project for Ionic (Based on Ionic 2.x).
+This is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, data sources, and best practices for Ionic development.
 
-Get from zero to app store 1000x faster with pre-built pages and best practices for Ionic development.
+The goal of the Super Starter is to get you from zero to app store faster than before, with a set of opinions from the Ionic team around page layout, data/user management, and project structure.
 
+The way to use this starter is to pick and choose the various page types you want use, and remove the ones you don't. If you want a blank slate, this starter isn't for you (use the `blank` type instead). One of the big advances in Ionic 2 was turning from a route-based navigation system to a flexible push/pop navigation system modelled off common native SDKs. This enables you build a few page layouts and then navigate to them whever you like in the app. Page reuse is paramount to reducing workload and improving user experience.
 
 ## Pages
 
 The Super Starter comes with a variety of ready-made pages. These pages help you assemble common building blocks for your app so you can focus on your unique features and branding.
-
-We encourage you to pick the pages you wish to use and remove the ones you don't. If you'd rather start with a blank slate, we recommend using our `blank` starter instead.
 
 Angular requires every page to be defined in the module for the app. To make this easy, all page configuration happens in `src/pages/pages.ts`. Here's an example of what this file looks like:
 
