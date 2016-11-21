@@ -11,7 +11,7 @@ The way to use this starter is to pick and choose the various page types you wan
 ## Table of Contents
 
 1. [Pages](#pages)
-2. [i18n](#i18n)
+2. [i18n](#i18n) (adding languages)
 
 
 ## Pages
@@ -83,3 +83,14 @@ The `User` provider is used to authenticate users through its `login(accountInfo
 
 ## i18n
 
+Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file. 
+
+By default, the only language strings provided are American English.
+
+### Adding Languages
+
+To add new languages, add new files to the `src/assets/i18n` directory, following the pattern of LANGCODE.json where LANGCODE is the language/locale code (ex: en/gb/de/es/etc.).
+
+### Changing the Language
+
+To change the language of the app, edit `src/app/app.component.ts` and modify `translate.use('en')` to use the LANGCODE from `src/assets/i18n/`
