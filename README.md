@@ -8,6 +8,12 @@ The goal of the Super Starter is to get you from zero to app store faster than b
 
 The way to use this starter is to pick and choose the various page types you want use, and remove the ones you don't. If you want a blank slate, this starter isn't for you (use the `blank` type instead). One of the big advances in Ionic 2 was turning from a route-based navigation system to a flexible push/pop navigation system modelled off common native SDKs. This enables you build a few page layouts and then navigate to them whever you like in the app. Page reuse is paramount to reducing workload and improving user experience.
 
+## Table of Contents
+
+1. [Pages](#pages)
+2. [i18n](#i18n)
+
+
 ## Pages
 
 The Super Starter comes with a variety of ready-made pages. These pages help you assemble common building blocks for your app so you can focus on your unique features and branding.
@@ -74,3 +80,6 @@ The Super Starter comes with some basic implementations of common providers.
 ### User
 
 The `User` provider is used to authenticate users through its `login(accountInfo)` and `signup(accountInfo)` methods, which perform `POST` requests to an API endpoint that you will need to configure.
+
+## i18n
+
