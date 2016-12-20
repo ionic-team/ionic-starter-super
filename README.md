@@ -2,7 +2,7 @@ __WORK IN PROGRESS, NOT READY FOR USE__
 
 # The Ionic Super Starter 🎮
 
-<img src="super.png" style="width: 200px" />
+<img src="super.png" width="200" />
 
 This is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, data sources, and best practices for Ionic development.
 
