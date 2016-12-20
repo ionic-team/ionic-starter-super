@@ -2,6 +2,8 @@ __WORK IN PROGRESS, NOT READY FOR USE__
 
 # The Ionic Super Starter 🎮
 
+![starter](super.png)
+
 This is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, data sources, and best practices for Ionic development.
 
 The goal of the Super Starter is to get you from zero to app store faster than before, with a set of opinions from the Ionic team around page layout, data/user management, and project structure.
