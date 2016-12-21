@@ -15,7 +15,7 @@ export class MapPage {
   constructor(public navCtrl: NavController, public platform: Platform) {}
 
   initJSMaps(mapEle) {
-    let map = new google.maps.Map(mapEle, {
+    new google.maps.Map(mapEle, {
       center: { lat: 43.071584, lng: -89.380120 },
       zoom: 16
     });

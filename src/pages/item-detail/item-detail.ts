@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ScrollEvent } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { Items } from '../../providers/providers';
 
