@@ -1,4 +1,4 @@
-import { Component, ViewChild, Renderer } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController, NavParams, ScrollEvent } from 'ionic-angular';
 
 import { Items } from '../../providers/providers';

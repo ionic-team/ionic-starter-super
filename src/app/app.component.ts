@@ -14,8 +14,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { ListMasterPage } from '../pages/list-master/list-master';
-import { ItemCreatePage } from '../pages/item-create/item-create';
-import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
