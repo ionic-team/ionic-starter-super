@@ -26,7 +26,7 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menu</ion-title>
+        <ion-title>Pages</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -47,7 +47,6 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'First Run', component: FirstRunPage },
     { title: 'Tutorial', component: TutorialPage },
     { title: 'Welcome', component: WelcomePage },
     { title: 'Tabs', component: TabsPage },
