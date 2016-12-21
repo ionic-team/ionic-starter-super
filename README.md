@@ -4,11 +4,13 @@ __WORK IN PROGRESS, NOT READY FOR USE__
 
 <img src="super2.png" width="400" />
 
-This is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, data sources, and best practices for Ionic development.
+The Ionic Super Starter is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, providers, , and best practices for Ionic development.
 
 The goal of the Super Starter is to get you from zero to app store faster than before, with a set of opinions from the Ionic team around page layout, data/user management, and project structure.
 
-The way to use this starter is to pick and choose the various page types you want use, and remove the ones you don't. If you want a blank slate, this starter isn't for you (use the `blank` type instead). One of the big advances in Ionic 2 was turning from a route-based navigation system to a flexible push/pop navigation system modelled off common native SDKs. This enables you build a few page layouts and then navigate to them whever you like in the app. Page reuse is paramount to reducing workload and improving user experience.
+The way to use this starter is to pick and choose the various page types you want use, and remove the ones you don't. If you want a blank slate, this starter isn't for you (use the `blank` type instead).
+
+One of the big advances in Ionic 2 was moving from a rigid route-based navigation system to a flexible push/pop navigation system modeled off common native SDKs. We've embraced this pattern to provide a set of reusable pages that can be navigated to anywhere in the app. Take a look at the [Settings page](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/settings/settings.html#L38) for a cool example of a page navigating to itself to provide a different UI without duplicating code.
 
 ## Table of Contents
 
@@ -20,26 +22,11 @@ The way to use this starter is to pick and choose the various page types you wan
 
 The Super Starter comes with a variety of ready-made pages. These pages help you assemble common building blocks for your app so you can focus on your unique features and branding.
 
-Angular requires every page to be defined in the module for the app. To make this easy, all page configuration happens in `src/pages/pages.ts`. Here's an example of what this file looks like:
+By default, the app loads with the TutorialPage as the first entry page. If the user has already gone through the tutorial, this page will be skipped.
 
-```typescript
-import { TutorialPage } from './tutorial/tutorial';
-// Other imports...
+Once the user is authenticated, the app will load with the Tabs page as the default page.
 
-export const Pages = [
-  TutorialPage,
-  WelcomePage,
-  LoginPage,
-  SignupPage,
-  TabsPage,
-  MapsPage
-  // ...
-]
-
-export const MainPage = TabsPage
-```
-
-Walking through this, we first import the page classes we are going to use in our app. Next, we put the class of each page in our `Pages` array, which the starter then adds to the Angular module for you. Finally, `MainPage` is a variable the refences the main page of the app. This is the page that users will spend most of their time in (for example, in Instagram this would be the tab layout page).
+The entry and main pages can be configured easily by updating the corresponding variables in [src/pages/pages.ts](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/pages.ts).
 
 ### Tutorial
 
@@ -85,7 +72,7 @@ The `User` provider is used to authenticate users through its `login(accountInfo
 
 ## i18n
 
-Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file. 
+Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file.
 
 By default, the only language strings provided are American English.
 
