@@ -36,12 +36,24 @@ Please read the [Pages](https://github.com/driftyco/ionic-starter-super/tree/mas
 
 The Super Starter comes with some basic implementations of common providers.
 
-More coming soon.
+### User
+
+The `User` provider is used to authenticate users through its `login(accountInfo)` and `signup(accountInfo)` methods, which perform `POST` requests to an API endpoint that you will need to configure.
+
+### Api
+
+The `Api` provider is a simple CRUD frontend to an API. Simply put the root of your API url in the Api class and call get/post/put/patch/delete 
 
 ## i18n
 
-Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file.
+Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file. 
 
 By default, the only language strings provided are American English.
 
-Please read the [i18n](https://github.com/driftyco/ionic-starter-super/wiki/i18n) section of the Wiki for more documentation on configuring i18n.
+### Adding Languages
+
+To add new languages, add new files to the `src/assets/i18n` directory, following the pattern of LANGCODE.json where LANGCODE is the language/locale code (ex: en/gb/de/es/etc.).
+
+### Changing the Language
+
+To change the language of the app, edit `src/app/app.component.ts` and modify `translate.use('en')` to use the LANGCODE from `src/assets/i18n/`
