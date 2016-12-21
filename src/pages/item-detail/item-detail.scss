@@ -2,7 +2,8 @@ page-item-detail {
   .item-profile {
     width: 100%;
     background-size: cover;
-    background-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
     height: 250px;
   }
 
