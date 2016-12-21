@@ -30,13 +30,13 @@ Once the user is authenticated, the app will load with the `MainPage` which is s
 
 The entry and main pages can be configured easily by updating the corresponding variables in [src/pages/pages.ts](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/pages.ts).
 
-Please read the [Pages](https://github.com/driftyco/ionic-starter-super/wiki/Pages) section of the Wiki for more documentation on each page.
+Please read the [Pages](https://github.com/driftyco/ionic-starter-super/tree/master/src/pages) readme, and the readme for each page in the source for more documentation on each.
 
 ## Providers
 
 The Super Starter comes with some basic implementations of common providers.
 
-Please read the [Providers](https://github.com/driftyco/ionic-starter-super/wiki/Providers) section of the Wiki for more documentation on each provider.
+More coming soon.
 
 ## i18n
 
