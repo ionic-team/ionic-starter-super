@@ -1,6 +1,6 @@
-__WORK IN PROGRESS, NOT READY FOR USE__
-
 # The Ionic Super Starter 🎮
+
+_Note: the Ionic Super Starter requires Ionic CLI 2.1.18 or greater._
 
 <img src="super2.png" width="400" />
 
@@ -16,7 +16,6 @@ One of the big advances in Ionic 2 was moving from a rigid route-based navigatio
 
 1. [Pages](#pages)
 2. [i18n](#i18n) (adding languages)
-
 
 ## Pages
 
