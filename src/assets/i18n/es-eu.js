@@ -7,11 +7,11 @@
 
   "TAB1_TITLE": "Elementuak",
   "TAB2_TITLE": "Bilatu",
-  "TAB3_TITLE": "",
+  "TAB3_TITLE": "Goiburua",
 
   "MAP_TITLE": "Mapa",
 
-  "TUTORIAL_SLIDE1_TITLE": "Bem-vindo ao Ionic Super Starter",
+  "TUTORIAL_SLIDE1_TITLE": "Ikusi Bideoa Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "O <b>Ionic Super Starter</b> é um starter para Ionic completo, com diversos componentes e páginas prontas para ser utilizado como guia de melhores práticas.",
 
   "TUTORIAL_SLIDE2_TITLE": "Como utilizar o Super Starter",
