@@ -1,0 +1,48 @@
+{
+  "NAME": "Nombre",
+  "PASSWORD": "Contraseña",
+  "EMAIL": "Email",
+  "LOGIN": "Iniciar Sesión",
+  "SIGNUP": "Registrarse",
+
+  "TAB1_TITLE": "Items",
+  "TAB2_TITLE": "Buscar",
+  "TAB3_TITLE": "Configuración",
+
+  "MAP_TITLE": "Mapa",
+
+  "TUTORIAL_SLIDE1_TITLE": "Bienvenido a Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "Como utilizar el Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Comenzar",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Necesitas ayuda? Check out the Super Starter README for a full tutorial",
+
+  "SETTINGS_TITLE": "Configuración",
+  "SETTINGS_OPTION1": "Opción 1",
+  "SETTINGS_OPTION2": "Opción 2",
+  "SETTINGS_OPTION3": "Opción 3",
+  "SETTINGS_OPTION4": "Opción 4",
+
+  "SETTINGS_PAGE_PROFILE": "Editar Perfil",
+
+  "WELCOME_TITLE": "Bienvenido",
+
+  "LOGIN_TITLE": "Iniciar sesión",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "Nuevo Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Añadir una imagen",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Buscar"
+}
