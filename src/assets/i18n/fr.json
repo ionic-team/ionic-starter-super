@@ -5,7 +5,7 @@
   "LOGIN": "Connexion",
   "SIGNUP": "Inscription",
 
-  "TAB1_TITLE": "Articles",
+  "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Recherche",
   "TAB3_TITLE": "Paramètres",
 
@@ -37,9 +37,9 @@
   "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
   "SIGNUP_BUTTON": "Inscription",
 
-  "LIST_MASTER_TITLE": "Articles",
+  "LIST_MASTER_TITLE": "Items",
 
-  "ITEM_CREATE_TITLE": "Nouvel article",
+  "ITEM_CREATE_TITLE": "Nouvel item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Ajouter une image",
 
   "CARDS_TITLE": "Social",
