@@ -63,6 +63,11 @@ export class SettingsPage {
     });
   }
 
+  ionViewDidLoad() {
+    // Build an empty form for the template to render
+    this.form = this.formBuilder.group({});
+  }
+
   ionViewWillEnter() {
     // Build an empty form for the template to render
     this.form = this.formBuilder.group({});
