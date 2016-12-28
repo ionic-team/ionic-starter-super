@@ -1,0 +1,48 @@
+{
+  "NAME": "الاسم",
+  "PASSWORD": "كلمة السر",
+  "EMAIL": "البريد الإلكتروني",
+  "LOGIN": "تسجيل الدخول",
+  "SIGNUP": "انشاء الحساب",
+
+  "TAB1_TITLE": "عناصر",
+  "TAB2_TITLE": "بحث",
+  "TAB3_TITLE": "إعدادات",
+
+  "MAP_TITLE": "خريطة",
+
+  "TUTORIAL_SLIDE1_TITLE": "مرحبا بكم في عدة البدء Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> عبارة عن عدة لبدء التطوير بواسطة Ionic. وهي تتميز بالعديد من الصفحات وأفضل الممارسات.",
+
+  "TUTORIAL_SLIDE2_TITLE": "كيفية استخدام Ionic Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "يمكنك تجميع أنواع الصفحات المختلفة التي ترغب بها وإزالة الباقي. وتوفر عدة البدء ​​العديد من تخطيطات الصفحات الاكثر شيوعا في التطبيقات النقالة، مثل صفحات تسجيل الدخول وانشاء الحساب، علامات التبويب، وهذه الصفحة التعليمية.",
+
+  "TUTORIAL_SLIDE3_TITLE": "كيفية الشروع",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "هل تحتاج إلى مساعدة؟ يمكنك الاطلاع على README لبرنامج تعليمي كامل على Ionic Super Starter",
+
+  "SETTINGS_TITLE": "إعدادات",
+  "SETTINGS_OPTION1": "خيار 1",
+  "SETTINGS_OPTION2": "خيار 2",
+  "SETTINGS_OPTION3": "خيار 3",
+  "SETTINGS_OPTION4": "خيار 4",
+
+  "SETTINGS_PAGE_PROFILE": "تعديل الملف الشخصي",
+
+  "WELCOME_TITLE": "مرحبا",
+
+  "LOGIN_TITLE": "تسجيل الدخول",
+  "LOGIN_ERROR": "تسجيل الدخول مستحيل. يرجى التحقق من معلومات الحساب والمحاولة مرة أخرى.",
+  "LOGIN_BUTTON": "تسجيل الدخول",
+  "SIGNUP_TITLE": "انشاء الحساب",
+  "SIGNUP_ERROR": "انشاء الحساب مستحيل. يرجى التحقق من معلومات الحساب والمحاولة مرة أخرى.",
+  "SIGNUP_BUTTON": "انشاء الحساب",
+
+  "LIST_MASTER_TITLE": "عناصر",
+
+  "ITEM_CREATE_TITLE": "عنصر جديد",
+  "ITEM_CREATE_CHOOSE_IMAGE": "إضافة صورة",
+
+  "CARDS_TITLE": "اجتماعي",
+
+  "SEARCH_TITLE": "بحث"
+}
