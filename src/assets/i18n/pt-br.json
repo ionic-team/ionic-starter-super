@@ -5,7 +5,7 @@
   "LOGIN": "Entrar",
   "SIGNUP": "Cadastre-se",
 
-  "TAB1_TITLE": "Items",
+  "TAB1_TITLE": "Itens",
   "TAB2_TITLE": "Busca",
   "TAB3_TITLE": "Configurações",
 
@@ -37,7 +37,7 @@
   "SIGNUP_ERROR": "Não foi possível criar sua conta. Verifique seus dados e tente novamente.",
   "SIGNUP_BUTTON": "Cadastre-se",
 
-  "LIST_MASTER_TITLE": "Items",
+  "LIST_MASTER_TITLE": "Itens",
 
   "ITEM_CREATE_TITLE": "Novo Item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Adicionar Imagem",
