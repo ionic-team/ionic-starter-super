@@ -1,0 +1,48 @@
+{
+  "NAME": "Name",
+  "PASSWORD": "Passwort",
+  "EMAIL": "Email",
+  "LOGIN": "Anmelden",
+  "SIGNUP": "Registrieren",
+
+  "TAB1_TITLE": "Artikel",
+  "TAB2_TITLE": "Suche",
+  "TAB3_TITLE": "Einstellungen",
+
+  "MAP_TITLE": "Karte",
+
+  "TUTORIAL_SLIDE1_TITLE": "Willkommen zum Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "Das <b>Ionic Super Starter</b> ist eine komplette ausgestatte Vorlage mit vielen best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "Verwendung von Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Du kannst Seiten die brauchst anpassen und unbenötigte Seiten entfernen. Wir haben Vorlagen für oft benötigte Seiten erstellt, wie Anmelde- und Registrierungsseiten, tabs und diese tutorial Seite.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Eine komplette Anleitung findest du im Super Starter README",
+
+  "SETTINGS_TITLE": "Einstellungen",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PAGE_PROFILE": "Profil anpassen",
+
+  "WELCOME_TITLE": "Wilkommen",
+
+  "LOGIN_TITLE": "Anmelden",
+  "LOGIN_ERROR": "Fehler beim Anmeldevorgang. Bitte überprüfen deine Angaben.",
+  "LOGIN_BUTTON": "Anmelden",
+  "SIGNUP_TITLE": "Registrieren",
+  "SIGNUP_ERROR": "Fehler beim Registrierungsvorgang. Bitte überprüfen deine Angaben.",
+  "SIGNUP_BUTTON": "Registrieren",
+
+  "LIST_MASTER_TITLE": "Artikel",
+
+  "ITEM_CREATE_TITLE": "Neuer Artikel",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Bild hinzufügen",
+
+  "CARDS_TITLE": "Soziales",
+
+  "SEARCH_TITLE": "Suche"
+}
