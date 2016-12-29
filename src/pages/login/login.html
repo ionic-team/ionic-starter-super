@@ -12,7 +12,7 @@
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>Email</ion-label>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
@@ -20,13 +20,13 @@
       Want to use a Username instead of an Email? Here you go:
 
       <ion-item>
-        <ion-label floating>Username</ion-label>
+        <ion-label floating>{{ 'USERNAME' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.username"></ion-input>
       </ion-item>
       -->
 
       <ion-item>
-        <ion-label fixed>Password</ion-label>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
