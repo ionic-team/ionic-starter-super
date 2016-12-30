@@ -14,8 +14,18 @@ One of the big advances in Ionic 2 was moving from a rigid route-based navigatio
 
 ## Table of Contents
 
-1. [Pages](#pages)
-2. [i18n](#i18n) (adding languages)
+1. [Getting Started](#getting-started)
+2. [Pages](#pages)
+3. [Providers](#providers)
+4. [i18n](#i18n) (adding languages)
+
+## <a name="getting-started"></a>Getting Started
+
+To test this starter out, install the latest version of the Ionic CLI and run:
+
+```bash
+ionic start myapp super --v2
+```
 
 ## Pages
 
