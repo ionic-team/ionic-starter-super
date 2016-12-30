@@ -62,7 +62,7 @@ export class MyApp {
   constructor(translate: TranslateService, platform: Platform, settings: Settings) {
     // Set the default language for translation strings, and the current language.
     translate.setDefaultLang('en');
-    translate.use('en')
+    translate.use(translate.getBrowserLang());
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
