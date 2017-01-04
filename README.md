@@ -49,7 +49,7 @@ The `Api` provider is a simple CRUD frontend to an API. Simply put the root of y
 
 The `Settings` provider is used to locally store user settings.
 
-## PWA
+## [PWA](docs/PWA.md)
 
 Information regarging using this template and your Ionic project as a Progressive Web App can be found at [http://blog.ionic.io/announcing-pwa-support-in-ionic-2/] (http://blog.ionic.io/announcing-pwa-support-in-ionic-2/).
 
