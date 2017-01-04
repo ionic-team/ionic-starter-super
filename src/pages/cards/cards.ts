@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import moment from 'moment/moment';
 
 /*
   Generated class for the Cards page.
@@ -21,7 +22,7 @@ export class CardsPage {
           avatar: 'assets/img/marty-avatar.png',
           name: 'Marty McFly'
         },
-        date: 'November 5, 1955',
+        date: '1970-11-05T20:24:01+00:00',
         image: 'assets/img/advance-card-bttf.png',
         content: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.',
       },
@@ -30,7 +31,7 @@ export class CardsPage {
           avatar: 'assets/img/sarah-avatar.png.jpeg',
           name: 'Sarah Connor'
         },
-        date: 'May 12, 1984',
+        date: '	1984-05-12T20:24:01+00:00',
         image: 'assets/img/advance-card-tmntr.jpg',
         content: 'I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.'
       },
@@ -39,11 +40,28 @@ export class CardsPage {
           avatar: 'assets/img/ian-avatar.png',
           name: 'Dr. Ian Malcolm'
         },
-        date: 'June 28, 1990',
+        date: '1990-06-28T20:24:01+00:00',
         image: 'assets/img/advance-card-jp.jpg',
         content: 'Your scientists were so preoccupied with whether or not they could, that they didn\'t stop to think if they should.'
       }
     ];
 
+  }
+  /**
+   * @description Returns the time ago of a date object
+   * @param date: ISO-formatted date
+   * @returns formatted: time ago
+   */
+  ago(date) {
+    return moment(date).fromNow();
+  }
+
+    /**
+   * @description Returns the time ago of a date object
+   * @param date: ISO-formatted date
+   * @returns formatted: formatted date 
+   */
+  date(date) {
+    return moment(date).format('MMMM D, YYYY');
   }
 }
