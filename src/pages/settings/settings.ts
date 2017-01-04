@@ -85,7 +85,6 @@ export class SettingsPage {
 
     // Watch the form for changes, and
     this.form.valueChanges.subscribe((v) => {
-      console.log(v);
       this.translate.use(v.language);
       this.settings.merge(this.form.value);
     });
