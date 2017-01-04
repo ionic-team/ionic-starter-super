@@ -43,6 +43,10 @@ The `User` provider is used to authenticate users through its `login(accountInfo
 
 The `Api` provider is a simple CRUD frontend to an API. Simply put the root of your API url in the Api class and call get/post/put/patch/delete 
 
+## PWA Support
+
+Information regarging using this template and your Ionic project as a Progressive Web App can be found at [http://blog.ionic.io/announcing-pwa-support-in-ionic-2/] (http://blog.ionic.io/announcing-pwa-support-in-ionic-2/).
+
 ## i18n
 
 Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file. 
