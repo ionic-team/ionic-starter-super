@@ -15,7 +15,9 @@ One of the big advances in Ionic 2 was moving from a rigid route-based navigatio
 ## Table of Contents
 
 1. [Pages](#pages)
-2. [i18n](#i18n) (adding languages)
+2. [Providers](#providers)
+3. [PWA](#pwa)
+4. [i18n](#i18n) (adding languages)
 
 ## Pages
 
@@ -39,11 +41,15 @@ The Super Starter comes with some basic implementations of common providers.
 
 The `User` provider is used to authenticate users through its `login(accountInfo)` and `signup(accountInfo)` methods, which perform `POST` requests to an API endpoint that you will need to configure.
 
-### Api
+### API
 
 The `Api` provider is a simple CRUD frontend to an API. Simply put the root of your API url in the Api class and call get/post/put/patch/delete 
 
-## PWA Support
+### Settings
+
+The `Settings` provider is used to locally store user settings.
+
+## PWA
 
 Information regarging using this template and your Ionic project as a Progressive Web App can be found at [http://blog.ionic.io/announcing-pwa-support-in-ionic-2/] (http://blog.ionic.io/announcing-pwa-support-in-ionic-2/).
 
