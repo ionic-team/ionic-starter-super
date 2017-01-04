@@ -32,21 +32,47 @@ export class SettingsPage {
 
   subSettings: any = SettingsPage;
 
+  languages: any[] = [
+    { name: 'English', code: 'en' },
+    { name: 'العربية', code: 'ar' },
+    { name: 'Беларускі', code: 'be' },
+    { name: 'Bosanski', code: 'bs' },
+    { name: 'Dansk', code: 'da' },
+    { name: 'Deutsch', code: 'de' },
+    { name: 'ελληνικά', code: 'el' },
+    { name: 'Español', code: 'es' },
+    { name: 'Español Europeo', code: 'es-eu' },
+    { name: 'Pilipino', code: 'fil' },
+    { name: 'Français', code: 'fr' },
+    { name: 'Italiano', code: 'it' },
+    { name: 'Norsk Bokmål', code: 'nb_NO' },
+    { name: 'Nederlands', code: 'nl' },
+    { name: 'Polski', code: 'pl' },
+    { name: 'Português Brasileiro', code: 'pt-br' },
+    { name: 'Português', code: 'pt-pt' },
+    { name: 'Русский', code: 'ru' },
+    { name: 'Slovenčina', code: 'sl' },
+    { name: 'Svenska', code: 'sv' },
+    { name: 'ไทย', code: 'th' },
+    { name: 'Türkçe', code: 'tr' }
+  ]
+
   constructor(public navCtrl: NavController,
-              public settings: Settings,
-              public formBuilder: FormBuilder,
-              public navParams: NavParams,
-              public translate: TranslateService) {
+    public settings: Settings,
+    public formBuilder: FormBuilder,
+    public navParams: NavParams,
+    public translate: TranslateService) {
   }
 
   _buildForm() {
     let group: any = {
       option1: [this.options.option1],
       option2: [this.options.option2],
-      option3: [this.options.option3]
+      option3: [this.options.option3],
+      language: [this.options.language]
     };
 
-    switch(this.page) {
+    switch (this.page) {
       case 'main':
         break;
       case 'profile':
@@ -59,6 +85,8 @@ export class SettingsPage {
 
     // Watch the form for changes, and
     this.form.valueChanges.subscribe((v) => {
+      console.log(v);
+      this.translate.use(v.language);
       this.settings.merge(this.form.value);
     });
   }

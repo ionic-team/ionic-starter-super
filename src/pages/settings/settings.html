@@ -34,6 +34,12 @@
           <ion-option value="3">3</ion-option>
         </ion-select>
       </ion-item>
+      <ion-item>
+        <ion-label>{{ 'LANGUAGE' | translate }}</ion-label>
+        <ion-select formControlName="language">
+          <ion-option *ngFor="let language of languages" [value]="language.code" [selected]="language.code == translate.currentLang">{{language.name}}</ion-option>
+        </ion-select>
+      </ion-item>
 
       <button ion-item [navPush]="subSettings" [navParams]="profileSettings">
         Edit Profile
