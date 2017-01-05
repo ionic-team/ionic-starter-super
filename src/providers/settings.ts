@@ -18,14 +18,16 @@ export class Settings {
     this._defaults = defaults;
   }
 
-  load() {
+  load(callback?: (res?: any) => void) {
     return this.storage.get(this.SETTINGS_KEY).then((value) => {
       if (value) {
         this.settings = value;
         this._mergeDefaults(this._defaults);
+        callback(this.settings);
       } else {
         return this.setAll(this._defaults).then((val) => {
           this.settings = val;
+          callback(this.settings);
         })
       }
     });
