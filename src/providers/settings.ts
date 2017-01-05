@@ -63,7 +63,7 @@ export class Settings {
   }
 
   getValue(key: string, callback?: (res: string) => void) {
-    return this.storage.get(key).then(settings => {
+    return this.storage.get(this.SETTINGS_KEY).then(settings => {
       if (callback) {
         callback(settings[key]);
       }
