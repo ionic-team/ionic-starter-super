@@ -31,29 +31,33 @@ export class Settings {
     });
   }
 
-  _mergeDefaults(defaults: any) {
+  _mergeDefaults(defaults: any, callback?: () => void) {
     for (let k in defaults) {
       if (!(k in this.settings)) {
         this.settings[k] = defaults[k];
       }
     }
-    return this.setAll(this.settings);
+    return this.setAll(this.settings, callback);
   }
 
-  merge(settings: any) {
+  merge(settings: any, callback?: () => void) {
     for (let k in settings) {
       this.settings[k] = settings[k];
     }
-    return this.save();
+    return this.save(callback);
   }
 
-  setValue(key: string, value: any) {
+  setValue(key: string, value: any, callback?: (res: string) => void) {
     this.settings[key] = value;
-    return this.storage.set(this.SETTINGS_KEY, this.settings);
+    return this.storage.set(this.SETTINGS_KEY, this.settings).then(res => {
+      callback(res);
+    });
   }
 
-  setAll(value: any) {
-    return this.storage.set(this.SETTINGS_KEY, value);
+  setAll(value: any, callback?: () => void) {
+    return this.storage.set(this.SETTINGS_KEY, value).then(res => {
+      callback();
+    });
   }
 
   getValue(key: string, callback?: (res: string) => void) {
@@ -67,8 +71,8 @@ export class Settings {
     });
   }
 
-  save() {
-    return this.setAll(this.settings);
+  save(callback?: () => void) {
+    return this.setAll(this.settings, callback);
   }
 
   get allSettings() {
