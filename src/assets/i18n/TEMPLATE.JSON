@@ -1,0 +1,49 @@
+{
+  "NAME": "", // The word 'Name'
+  "PASSWORD": "", // The word 'Password'
+  "EMAIL": "", // The word 'Email'
+  "LOGIN": "", // The phrase 'Sign in'
+  "SIGNUP": "", // The phrase 'Sign up' or 'Register'
+
+  "TAB1_TITLE": "", // The word 'Items'
+  "TAB2_TITLE": "", // The word 'Search'
+  "TAB3_TITLE": "", // The word 'Settings'
+
+  "MAP_TITLE": "", // The word 'Map'
+
+  "TUTORIAL_SLIDE1_TITLE": "",  // The phrase 'Welcome to the Ionic Super Starter'
+  "TUTORIAL_SLIDE1_DESCRIPTION": "", // The phrase 'The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.'
+
+  "TUTORIAL_SLIDE2_TITLE": "", // The phrase 'How to use the Super Starter'
+  "TUTORIAL_SLIDE2_DESCRIPTION": "", // The phrase 'Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.'
+
+  "TUTORIAL_SLIDE3_TITLE": "", // The phrase 'Getting Started'
+  "TUTORIAL_SLIDE3_DESCRIPTION": "", // The phrase 'Need help? Check out the Super Starter README for a full tutorial'
+
+  "SETTINGS_TITLE": "", // the word 'Settings'
+  "SETTINGS_OPTION1": "", // the word 'Option 1'
+  "SETTINGS_OPTION2": "", // the word 'Option 2'
+  "SETTINGS_OPTION3": "", // the word 'Option 3'
+  "SETTINGS_OPTION4": "", // the word 'Option 4'
+  "LANGUAGE": "", // the word 'Language'
+
+  "SETTINGS_PAGE_PROFILE": "", // the phrase 'Edit Profile'
+
+  "WELCOME_TITLE": "", // the word 'Welcome'
+
+  "LOGIN_TITLE": "", // the phrase 'Sign in'
+  "LOGIN_ERROR": "", // the phrase 'Unable to sign in. Please check your account information and try again.'
+  "LOGIN_BUTTON": "", // the phrase 'Sign in'
+  "SIGNUP_TITLE": "", // the phrase 'Sign up'
+  "SIGNUP_ERROR": "", // the phrase 'Unable to create account. Please check your account information and try again.'
+  "SIGNUP_BUTTON": "", // the phrase 'Sign up'
+
+  "LIST_MASTER_TITLE": "", // the word 'Items'
+
+  "ITEM_CREATE_TITLE": "", // the phrase 'New Item'
+  "ITEM_CREATE_CHOOSE_IMAGE": "", // the phrase 'Add Image'
+
+  "CARDS_TITLE": "", // the word 'Social'
+
+  "SEARCH_TITLE": "" // the word 'Search'
+}
