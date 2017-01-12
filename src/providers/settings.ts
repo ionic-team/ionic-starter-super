@@ -1,80 +1,102 @@
 import { Injectable } from '@angular/core';
-
 import { Storage } from '@ionic/storage';
+import { Observable } from 'rxjs';
+import { Constants } from '../app/constants';
 
 /**
  * A simple settings/config class for storing key/value pairs with persistence.
  */
 @Injectable()
 export class Settings {
-  private SETTINGS_KEY: string = '_settings';
-
   settings: any;
 
+  settingsObservable: Observable<any> = Observable.fromPromise(this.storage.get(Constants.STORAGE_KEY_SETTINGS)
+    .then((value) => {
+      if (value) {
+        this.settings = value;
+        return this._mergeDefaults(this._defaults);
+      } else {
+        return this.setAll(this._defaults).then((val) => {
+          this.settings = val;
+        })
+      }
+    })
+  ).share();
+
+
   _defaults: any;
-  _readyPromise: Promise<any>;
 
   constructor(public storage: Storage, defaults: any) {
     this._defaults = defaults;
   }
 
-  load(callback?: (res?: any) => void) {
-    return this.storage.get(this.SETTINGS_KEY).then((value) => {
-      if (value) {
-        this.settings = value;
-        this._mergeDefaults(this._defaults);
-        callback(this.settings);
-      } else {
-        return this.setAll(this._defaults).then((val) => {
-          this.settings = val;
-          callback(this.settings);
-        })
+  _mergeDefaults(defaults: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      for (let k in defaults) {
+        if (!(k in this.settings)) {
+          this.settings[k] = defaults[k];
+        }
       }
+      this.setAll(this.settings).then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
     });
   }
 
-  _mergeDefaults(defaults: any, callback?: () => void) {
-    for (let k in defaults) {
-      if (!(k in this.settings)) {
-        this.settings[k] = defaults[k];
+  merge(settings: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      for (let k in settings) {
+        this.settings[k] = settings[k];
       }
-    }
-    return this.setAll(this.settings, callback);
+      this.save().then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
+    })
   }
 
-  merge(settings: any, callback?: () => void) {
-    for (let k in settings) {
-      this.settings[k] = settings[k];
-    }
-    return this.save(callback);
+  setValue(key: string, value: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.settings[key] = value;
+      this.storage.set(Constants.STORAGE_KEY_SETTINGS, this.settings).then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
+    })
   }
 
-  setValue(key: string, value: any, callback?: (res: string) => void) {
-    this.settings[key] = value;
-    return this.storage.set(this.SETTINGS_KEY, this.settings).then(res => {
-      callback(res);
+  setAll(value: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.storage.set(Constants.STORAGE_KEY_SETTINGS, value).then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
     });
   }
 
-  setAll(value: any, callback?: () => void) {
-    return this.storage.set(this.SETTINGS_KEY, value).then(res => {
-      callback();
+  getValue(key: string): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.storage.get(Constants.STORAGE_KEY_SETTINGS).then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
     });
   }
 
-  getValue(key: string, callback?: (res: string) => void) {
-    return this.storage.get(this.SETTINGS_KEY).then(settings => {
-      if (callback) {
-        callback(settings[key]);
-      }
-      else {
-        return settings[key];
-      }
+  save(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.setAll(this.settings).then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
     });
-  }
-
-  save(callback?: () => void) {
-    return this.setAll(this.settings, callback);
   }
 
   get allSettings() {

@@ -106,7 +106,7 @@ export class SettingsPage {
       this.pageTitle = res;
     })
 
-    this.settings.load().then(() => {
+    this.settings.settingsObservable.subscribe((value) => {
       this.settingsReady = true;
       this.options = this.settings.allSettings;
 

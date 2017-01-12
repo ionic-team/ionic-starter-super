@@ -59,6 +59,8 @@ export class MyApp {
     { title: 'Search', component: SearchPage }
   ]
 
+
+
   constructor(translate: TranslateService, platform: Platform, settings: Settings) {
     // Set the default language for translation strings, and the current language.
     translate.setDefaultLang('en');
@@ -67,10 +69,20 @@ export class MyApp {
       if (!val) {
         val = 'en';
       }
-      console.log(val);
+      translate.setDefaultLang(val);
       translate.use(val);
     });
+    settings.settingsObservable.subscribe((value) => {
+      // Here, you can have some sort of implementation for 
+      // actions for when settings are loaded from storage.
+      // Below is an example implementation.
 
+      // settings.settings['USER_LOGGED_IN'] = false;
+      // if (settings.settings['USER_LANGUAGE'] !== '') {
+      //   translate.setDefaultLang(settings.settings['USER_LANGUAGE']);
+      //   translate.use(settings.settings['USER_LANGUAGE']);
+      // }
+    });
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
