@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav } from 'ionic-angular';
+import {Platform, Nav, Config} from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Settings } from '../providers/providers';
@@ -59,7 +59,7 @@ export class MyApp {
     { title: 'Search', component: SearchPage }
   ]
 
-  constructor(translate: TranslateService, platform: Platform, settings: Settings) {
+  constructor(translate: TranslateService, platform: Platform, settings: Settings, config: Config) {
     // Set the default language for translation strings, and the current language.
     translate.setDefaultLang('en');
     translate.use('en');
@@ -69,6 +69,10 @@ export class MyApp {
       }
       console.log(val);
       translate.use(val);
+    });
+
+    translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
+      config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
     });
 
     platform.ready().then(() => {
