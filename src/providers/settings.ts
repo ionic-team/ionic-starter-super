@@ -57,7 +57,10 @@ export class Settings {
   }
 
   getValue(key: string) {
-    return this.storage.get(key);
+    return this.storage.get(this.SETTINGS_KEY)
+      .then(settings => {
+        return settings[key];
+      });
   }
 
   save() {
