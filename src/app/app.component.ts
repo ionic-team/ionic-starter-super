@@ -1,6 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
+import { Http } from '@angular/http';
 import { Platform, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/throw';
+import 'rxjs/add/operator/catch';
 
 import { Settings } from '../providers/providers';
 
@@ -40,7 +44,7 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
   <ion-nav #content [root]="rootPage"></ion-nav>`
 })
 export class MyApp {
-  rootPage = FirstRunPage;
+  rootPage: any;
 
   @ViewChild(Nav) nav: Nav;
 
@@ -59,16 +63,44 @@ export class MyApp {
     { title: 'Search', component: SearchPage }
   ]
 
-  constructor(translate: TranslateService, platform: Platform, settings: Settings) {
-    // Set the default language for translation strings, and the current language.
-    translate.setDefaultLang('en');
-    translate.use('en')
+  constructor(public translate: TranslateService, public http: Http, platform: Platform, settings: Settings) {
+    // Prevent race condition: wait for Promise resolution before loading root view
+    this.initI18n().then(() => {
+      this.rootPage = FirstRunPage;
+    });
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
+    });
+  }
+
+  initI18n(): Promise<any> {
+    // Set the default language for translation strings.
+    let defaultLanguage = 'en';
+    this.translate.setDefaultLang(defaultLanguage);
+
+    // Detect user language.
+    let browserLang = this.translate.getBrowserLang();
+
+    // Pending issue https://github.com/ocombe/ng2-translate/issues/282 resolution,
+    // we can first try to loan the I18N JSON file for the detected language
+    return new Promise((resolve, reject) => {
+      this.http.get(`../assets/i18n/${browserLang}.json`)
+        .catch((error: any) => {
+          // I18N File failed to load, fall back to English
+          this.translate.use(defaultLanguage);
+          resolve(true);
+
+          return Observable.throw(error);
+        })
+        .subscribe((data) => {
+          // I18N File loaded successfully, we can proceed
+          this.translate.use(browserLang);
+          resolve(true);
+        });
     });
   }
 
