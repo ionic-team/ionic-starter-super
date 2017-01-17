@@ -66,7 +66,7 @@ export class Items {
     return this.items.filter((item) => {
       for(let key in params) {
         let field = item[key];
-        if(typeof field == 'string' && field.toLowerCase().indexOf(params[key]) >= 0) {
+        if(typeof field == 'string' && field.toLowerCase().indexOf(params[key].toLowerCase()) >= 0) {
           return item;
         } else if(field == params[key]) {
           return item;
