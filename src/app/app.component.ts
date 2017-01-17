@@ -74,7 +74,7 @@ export class MyApp {
     translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
       config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
     });
-    settings.settingsObservable.subscribe((value) => {
+    settings.load$.subscribe((value) => {
       // Here, you can have some sort of implementation for 
       // actions for when settings are loaded from storage.
       // Below is an example implementation.
