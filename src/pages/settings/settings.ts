@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { NavController, NavParams } from 'ionic-angular';
 import { Settings } from '../../providers/settings';
 import { TranslateService } from 'ng2-translate/ng2-translate';
+import { Constants } from '../../app/constants';
+import {Language} from '../../models/language';
 
 /**
  * The Settings page is a simple form that syncs with a Settings provider
@@ -32,30 +34,7 @@ export class SettingsPage {
 
   subSettings: any = SettingsPage;
 
-  languages: any[] = [
-    { name: 'English', code: 'en' },
-    { name: 'العربية', code: 'ar' },
-    { name: 'Беларускі', code: 'be' },
-    { name: 'Bosanski', code: 'bs' },
-    { name: 'Dansk', code: 'da' },
-    { name: 'Deutsch', code: 'de' },
-    { name: 'ελληνικά', code: 'el' },
-    { name: 'Español', code: 'es' },
-    { name: 'Español Europeo', code: 'es-eu' },
-    { name: 'Pilipino', code: 'fil' },
-    { name: 'Français', code: 'fr' },
-    { name: 'Italiano', code: 'it' },
-    { name: 'Norsk Bokmål', code: 'nb_NO' },
-    { name: 'Nederlands', code: 'nl' },
-    { name: 'Polski', code: 'pl' },
-    { name: 'Português Brasileiro', code: 'pt-br' },
-    { name: 'Português', code: 'pt-pt' },
-    { name: 'Русский', code: 'ru' },
-    { name: 'Slovenčina', code: 'sl' },
-    { name: 'Svenska', code: 'sv' },
-    { name: 'ไทย', code: 'th' },
-    { name: 'Türkçe', code: 'tr' }
-  ]
+  languages: Language[] = Constants.LANGUAGES;
 
   constructor(public navCtrl: NavController,
     public settings: Settings,
