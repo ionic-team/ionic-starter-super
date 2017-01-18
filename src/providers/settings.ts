@@ -44,17 +44,17 @@ export class Settings {
     this.save();
   }
 
-  setValue(key: string, value: any): void {
+  setValue(key: string, value: any) {
     this.settings[key] = value;
-    this.storage.set(Constants.STORAGE_KEY_SETTINGS, this.settings);
+    return this.storage.set(Constants.STORAGE_KEY_SETTINGS, this.settings);
   }
 
-  setAll(value: any): void {
-    this.storage.set(Constants.STORAGE_KEY_SETTINGS, value);
+  setAll(value: any) {
+    return this.storage.set(Constants.STORAGE_KEY_SETTINGS, value);
   }
 
   getValue(key: string): any {
-    this.storage.get(Constants.STORAGE_KEY_SETTINGS).then(result => {
+    return this.storage.get(Constants.STORAGE_KEY_SETTINGS).then(result => {
       return result;
     })
   }
