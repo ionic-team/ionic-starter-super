@@ -28,13 +28,13 @@ export class Settings {
     this._defaults = defaults;
   }
 
-  _mergeDefaults(defaults: any): void {
+  _mergeDefaults(defaults: any) {
     for (let k in defaults) {
       if (!(k in this.settings)) {
         this.settings[k] = defaults[k];
       }
     }
-    this.setAll(this.settings);
+    return this.setAll(this.settings);
   }
 
   merge(settings: any): void {
@@ -53,14 +53,14 @@ export class Settings {
     return this.storage.set(Constants.STORAGE_KEY_SETTINGS, value);
   }
 
-  getValue(key: string): any {
+  getValue(key: string) {
     return this.storage.get(Constants.STORAGE_KEY_SETTINGS).then(result => {
       return result;
     })
   }
 
-  save(): void {
-    this.setAll(this.settings);
+  save() {
+    return this.setAll(this.settings);
   }
 
   get allSettings() {
