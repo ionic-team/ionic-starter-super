@@ -1,7 +1,10 @@
 {
+  "BACK_BUTTON_TEXT" : "Voltar",
+
   "NAME": "Nome",
-  "PASSWORD": "Senha",
   "EMAIL": "Email",
+  "USERNAME": "Nome de Usuário",
+  "PASSWORD": "Senha",
   "LOGIN": "Entrar",
   "SIGNUP": "Cadastre-se",
 
@@ -10,6 +13,9 @@
   "TAB3_TITLE": "Configurações",
 
   "MAP_TITLE": "Mapa",
+
+  "TUTORIAL_SKIP_BUTTON" : "Pular",
+  "TUTORIAL_CONTINUE_BUTTON" : "Continuar",
 
   "TUTORIAL_SLIDE1_TITLE": "Bem-vindo ao Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "O <b>Ionic Super Starter</b> é um starter para Ionic completo, com diversos componentes e páginas prontas para ser utilizado como guia de melhores práticas.",
@@ -20,11 +26,17 @@
   "TUTORIAL_SLIDE3_TITLE": "Iniciando o projeto",
   "TUTORIAL_SLIDE3_DESCRIPTION": "Precisa de ajuda? Dê uma olhada no README do Super Starter para um tutorial completo",
 
+  "TUTORIAL_SLIDE4_TITLE": "Pronto para Usar?",
+
+  "WELCOME_INTRO" : "O ponto de partida para seu próximo app feito no Ionic",
+
   "SETTINGS_TITLE": "Configurações",
   "SETTINGS_OPTION1": "Opção 1",
   "SETTINGS_OPTION2": "Opção 2",
   "SETTINGS_OPTION3": "Opção 3",
   "SETTINGS_OPTION4": "Opção 4",
+
+  "SETTINGS_PROFILE_BUTTON" : "Editar Perfil",
 
   "SETTINGS_PAGE_PROFILE": "Editar Perfil",
 
@@ -42,7 +54,15 @@
   "ITEM_CREATE_TITLE": "Novo Item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Adicionar Imagem",
 
+  "ITEM_NAME_PLACEHOLDER" : "Nome",
+  "ITEM_ABOUT_PLACEHOLDER" : "Sobre",
+
+  "DONE_BUTTON" : "Pronto",
+  "CANCEL_BUTTON" : "Cancelar",
+  "DELETE_BUTTON" : "Apagar",
+
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Busca"
+  "SEARCH_TITLE": "Busca",
+  "SEARCH_PLACEHOLDER" : "Procure um item da lista, ex: \"Donald Duck\""
 }
