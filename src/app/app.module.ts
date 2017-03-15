@@ -1,7 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { Http } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
+import { Storage, IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 
@@ -82,8 +82,6 @@ export function entryComponents() {
 
 export function providers() {
   return [
-    Storage,
-
     User,
     Api,
     Items,
@@ -98,6 +96,7 @@ export function providers() {
   declarations: declarations(),
   imports: [
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
