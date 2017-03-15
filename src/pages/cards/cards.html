@@ -16,7 +16,7 @@
         <img [src]="item.user.avatar">
       </ion-avatar>
       <h2>{{item.user.name}}</h2>
-      <p>{{item.date}}</p>
+      <p>{{format(item.date)}}</p>
     </ion-item>
 
     <img [src]="item.image">
@@ -40,7 +40,7 @@
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          11h ago
+          {{ago('2017-01-04T20:24:01+00:00')}}
         </ion-note>
       </ion-col>
     </ion-row>

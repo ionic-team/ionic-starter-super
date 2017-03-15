@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { NavController, NavParams } from 'ionic-angular';
 import { Settings } from '../../providers/settings';
 import { TranslateService } from 'ng2-translate/ng2-translate';
+import { Constants } from '../../app/constants';
+import {Language} from '../../models/language';
 
 /**
  * The Settings page is a simple form that syncs with a Settings provider
@@ -32,21 +34,24 @@ export class SettingsPage {
 
   subSettings: any = SettingsPage;
 
+  languages: Language[] = Constants.LANGUAGES;
+
   constructor(public navCtrl: NavController,
-              public settings: Settings,
-              public formBuilder: FormBuilder,
-              public navParams: NavParams,
-              public translate: TranslateService) {
+    public settings: Settings,
+    public formBuilder: FormBuilder,
+    public navParams: NavParams,
+    public translate: TranslateService) {
   }
 
   _buildForm() {
     let group: any = {
       option1: [this.options.option1],
       option2: [this.options.option2],
-      option3: [this.options.option3]
+      option3: [this.options.option3],
+      language: [this.options.language]
     };
 
-    switch(this.page) {
+    switch (this.page) {
       case 'main':
         break;
       case 'profile':
@@ -59,6 +64,7 @@ export class SettingsPage {
 
     // Watch the form for changes, and
     this.form.valueChanges.subscribe((v) => {
+      this.translate.use(v.language);
       this.settings.merge(this.form.value);
     });
   }
@@ -79,7 +85,7 @@ export class SettingsPage {
       this.pageTitle = res;
     })
 
-    this.settings.load().then(() => {
+    this.settings.load$.subscribe((value) => {
       this.settingsReady = true;
       this.options = this.settings.allSettings;
 
