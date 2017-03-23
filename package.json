@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@ionic-native/camera": "3.1.0",
+    "@ionic-native/google-maps": "3.1.0",
     "ng2-translate": "^5.0.0"
   }
 }
