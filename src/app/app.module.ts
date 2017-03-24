@@ -3,6 +3,11 @@ import { Http } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Storage, IonicStorageModule } from '@ionic/storage';
 
+import { Camera } from '@ionic-native/camera';
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
@@ -82,6 +87,11 @@ export function entryComponents() {
 
 export function providers() {
   return [
+    Camera,
+    GoogleMaps,
+    StatusBar,
+    SplashScreen,
+
     User,
     Api,
     Items,
