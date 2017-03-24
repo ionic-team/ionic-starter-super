@@ -42,6 +42,7 @@ export class ItemCreatePage {
 
   getPicture() {
     this.camera.getPicture({
+      destinationType: this.camera.DestinationType.DATA_URL,
       targetWidth: 96,
       targetHeight: 96
     }).then((data) => {
