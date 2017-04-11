@@ -1,3 +1,5 @@
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { Http } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -25,7 +27,11 @@ import { Api } from '../providers/api';
 import { Settings } from '../providers/settings';
 import { Items } from '../mocks/providers/items';
 
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { Camera } from '@ionic-native/camera';
+
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
+import { BrowserModule } from "@angular/platform-browser/";
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -85,8 +91,11 @@ export function providers() {
     User,
     Api,
     Items,
-
-    { provide: Settings, useFactory: provideSettings, deps: [ Storage ] },
+    Camera,
+    GoogleMaps,
+    SplashScreen,
+    StatusBar,
+    { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ];
@@ -95,6 +104,7 @@ export function providers() {
 @NgModule({
   declarations: declarations(),
   imports: [
+    BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
@@ -107,4 +117,4 @@ export function providers() {
   entryComponents: entryComponents(),
   providers: providers()
 })
-export class AppModule {}
+export class AppModule { }
