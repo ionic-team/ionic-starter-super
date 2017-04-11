@@ -41,38 +41,22 @@ export class ItemCreatePage {
   }
 
   getPicture() {
-    if (Camera['installed']()) {
-      this.camera.getPicture({
-        targetWidth: 96,
-        targetHeight: 96
-      }).then((data) => {
-        this.form.patchValue({ 'profilePic': 'data:image/jpg;base64,' + data });
-      }, (err) => {
-        alert('Unable to take photo');
-      })
-    }
-    else {
-      this.fileInput.nativeElement.click();
-    }
+
+
+    this.camera.getPicture({
+      targetWidth: 96,
+      targetHeight: 96
+    }).then((data) => {
+      this.form.patchValue({ 'profilePic': 'data:image/jpg;base64,' + data });
+    }, (err) => {
+      alert('Unable to take photo - only native device');
+    })
   }
 
-  processWebImage(event) {
-    let input = this.fileInput.nativeElement;
 
-    var reader = new FileReader();
-    reader.onload = (readerEvent) => {
-      input.parentNode.removeChild(input);
 
-      var imageData = (readerEvent.target as any).result;
-      this.form.patchValue({ 'profilePic': imageData });
-    };
 
-    reader.readAsDataURL(event.target.files[0]);
-  }
 
-  getProfileImageStyle() {
-    return 'url(' + this.form.controls['profilePic'].value + ')'
-  }
 
   /**
    * The user cancelled, so we dismiss without sending data back.
