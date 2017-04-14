@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Storage, IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
+import {BrowserModule} from '@angular/platform-browser';
 
 import { CardsPage } from '../pages/cards/cards';
 import { ContentPage } from '../pages/content/content';
@@ -97,6 +98,7 @@ export function providers() {
   imports: [
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
+    BrowserModule,
     TranslateModule.forRoot({
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
