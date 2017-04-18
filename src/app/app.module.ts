@@ -99,9 +99,11 @@ export function providers() {
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: HttpLoaderFactory,
-      deps: [Http]
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [Http]
+        }
     })
   ],
   bootstrap: [IonicApp],
