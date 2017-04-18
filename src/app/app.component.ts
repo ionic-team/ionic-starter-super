@@ -18,7 +18,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 
-import { TranslateService } from 'ng2-translate/ng2-translate';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   template: `<ion-menu [content]="content">
