@@ -1,7 +1,13 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpModule, Http } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Storage, IonicStorageModule } from '@ionic/storage';
+
+import { Camera } from '@ionic-native/camera'; 
+import { GoogleMaps } from '@ionic-native/google-maps'; 
+import { SplashScreen } from '@ionic-native/splash-screen'; 
+import { StatusBar } from '@ionic-native/status-bar'; 
 
 import { MyApp } from './app.component';
 
@@ -25,12 +31,14 @@ import { Api } from '../providers/api';
 import { Settings } from '../providers/settings';
 import { Items } from '../mocks/providers/items';
 
-import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+//TranslateStaticLoader
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: Http) {
-  return new TranslateStaticLoader(http, './assets/i18n', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n', '.json');
 }
 
 export function provideSettings(storage: Storage) {
@@ -82,6 +90,10 @@ export function entryComponents() {
 
 export function providers() {
   return [
+    Camera,
+    GoogleMaps,
+    StatusBar,
+    SplashScreen,
     User,
     Api,
     Items,
@@ -95,13 +107,17 @@ export function providers() {
 @NgModule({
   declarations: declarations(),
   imports: [
+    BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
-    })
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [Http]
+        }
+      })
   ],
   bootstrap: [IonicApp],
   entryComponents: entryComponents(),

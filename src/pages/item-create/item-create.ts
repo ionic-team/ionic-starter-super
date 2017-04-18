@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { NavController, ViewController } from 'ionic-angular';
 
-import { Camera } from 'ionic-native';
+import { Camera } from '@ionic-native/camera';
 
 /*
   Generated class for the ItemCreate page.
@@ -23,7 +23,7 @@ export class ItemCreatePage {
 
   form: FormGroup;
 
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder) {
+  constructor(public camera: Camera, public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder) {
     this.form = formBuilder.group({
       profilePic: [''],
       name: ['', Validators.required],
@@ -41,8 +41,9 @@ export class ItemCreatePage {
   }
 
   getPicture() {
-    if (Camera['installed']()) {
-      Camera.getPicture({
+    if (Camera['installed']()) { 
+      this.camera.getPicture({
+        destinationType: this.camera.DestinationType.DATA_URL,
         targetWidth: 96,
         targetHeight: 96
       }).then((data) => {
@@ -50,8 +51,8 @@ export class ItemCreatePage {
       }, (err) => {
         alert('Unable to take photo');
       })
-    } else {
-      this.fileInput.nativeElement.click();
+    } else {        
+        this.fileInput.nativeElement.click();
     }
   }
 
