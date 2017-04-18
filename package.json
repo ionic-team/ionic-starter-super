@@ -43,7 +43,5 @@
     "cordova-plugin-device",
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
-  ],
-  "cordovaPlatforms": [],
-  "description": "aesuper: An Ionic project"
+  ]
 }
