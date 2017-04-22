@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import {Platform, Nav, Config} from 'ionic-angular';
+import { Platform, Nav, Config } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Settings } from '../providers/providers';
@@ -18,7 +18,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { SettingsPage } from '../pages/settings/settings';
 import { SearchPage } from '../pages/search/search';
 
-import { TranslateService } from 'ng2-translate/ng2-translate';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   template: `<ion-menu [content]="content">
