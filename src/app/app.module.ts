@@ -31,7 +31,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function HttpLoaderFactory(http: Http) {
-  return new TranslateHttpLoader(http, './assets/i18n', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 export function provideSettings(storage: Storage) {
