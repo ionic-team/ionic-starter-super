@@ -20,7 +20,7 @@ export class Api {
     // Support easy query params for GET requests
     if (params) {
       let p = new URLSearchParams();
-      for(let k in params) {
+      for (let k in params) {
         p.set(k, params[k]);
       }
       // Set the search field if we have params and don't already have

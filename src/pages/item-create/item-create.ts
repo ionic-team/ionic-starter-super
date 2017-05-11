@@ -4,12 +4,7 @@ import { NavController, ViewController } from 'ionic-angular';
 
 import { Camera } from '@ionic-native/camera';
 
-/*
-  Generated class for the ItemCreate page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-item-create',
   templateUrl: 'item-create.html'
@@ -23,7 +18,7 @@ export class ItemCreatePage {
 
   form: FormGroup;
 
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder, private camera: Camera) {
+  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder, public camera: Camera) {
     this.form = formBuilder.group({
       profilePic: [''],
       name: ['', Validators.required],

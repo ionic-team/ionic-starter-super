@@ -8,28 +8,28 @@ import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
 import { ContentPage } from '../pages/content/content';
+import { ItemCreatePage } from '../pages/item-create/item-create';
+import { ItemDetailPage } from '../pages/item-detail/item-detail';
+import { ListMasterPage } from '../pages/list-master/list-master';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
+import { MenuPage } from '../pages/menu/menu';
+import { SearchPage } from '../pages/search/search';
+import { SettingsPage } from '../pages/settings/settings';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { ListMasterPage } from '../pages/list-master/list-master';
-import { ItemCreatePage } from '../pages/item-create/item-create';
-import { ItemDetailPage } from '../pages/item-detail/item-detail';
-import { MenuPage } from '../pages/menu/menu';
-import { SettingsPage } from '../pages/settings/settings';
-import { SearchPage } from '../pages/search/search';
 
-import { User } from '../providers/user';
 import { Api } from '../providers/api';
-import { Settings } from '../providers/settings';
 import { Items } from '../mocks/providers/items';
+import { Settings } from '../providers/settings';
+import { User } from '../providers/user';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { GoogleMaps } from '@ionic-native/google-maps';
 import { Camera } from '@ionic-native/camera';
+import { GoogleMaps } from '@ionic-native/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -65,18 +65,18 @@ let pages = [
   MyApp,
   CardsPage,
   ContentPage,
+  ItemCreatePage,
+  ItemDetailPage,
+  ListMasterPage,
   LoginPage,
   MapPage,
+  MenuPage,
+  SearchPage,
+  SettingsPage,
   SignupPage,
   TabsPage,
   TutorialPage,
-  WelcomePage,
-  ListMasterPage,
-  ItemDetailPage,
-  ItemCreatePage,
-  MenuPage,
-  SettingsPage,
-  SearchPage
+  WelcomePage
 ];
 
 export function declarations() {
@@ -89,13 +89,13 @@ export function entryComponents() {
 
 export function providers() {
   return [
-    User,
     Api,
     Items,
-    StatusBar,
+    User,
     Camera,
-    SplashScreen,
     GoogleMaps,
+    SplashScreen,
+    StatusBar,
 
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
@@ -108,15 +108,15 @@ export function providers() {
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [Http]
       }
-    })
+    }),
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: entryComponents(),

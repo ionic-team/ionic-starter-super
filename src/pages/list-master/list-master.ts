@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 
-import { ItemDetailPage } from '../item-detail/item-detail';
 import { ItemCreatePage } from '../item-create/item-create';
+import { ItemDetailPage } from '../item-detail/item-detail';
 
 import { Items } from '../../providers/providers';
+
 import { Item } from '../../models/item';
 
 @Component({
