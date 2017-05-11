@@ -24,7 +24,7 @@ One of the big advances in Ionic 2 was moving from a rigid route-based navigatio
 To test this starter out, install the latest version of the Ionic CLI and run:
 
 ```bash
-ionic start myapp super --v2
+ionic start mySuperApp super
 ```
 
 ## Pages
