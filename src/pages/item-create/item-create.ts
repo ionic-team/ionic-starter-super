@@ -52,12 +52,10 @@ export class ItemCreatePage {
   }
 
   processWebImage(event) {
-    let input = this.fileInput.nativeElement;
-
-    var reader = new FileReader();
+    let reader = new FileReader();
     reader.onload = (readerEvent) => {
 
-      var imageData = (readerEvent.target as any).result;
+      let imageData = (readerEvent.target as any).result;
       this.form.patchValue({ 'profilePic': imageData });
     };
 
