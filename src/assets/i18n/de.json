@@ -4,6 +4,8 @@
   "EMAIL": "Email",
   "LOGIN": "Anmelden",
   "SIGNUP": "Registrieren",
+  "CANCEL_BUTTON": "Schließen",
+  "BACK_BUTTON_TEXT": "Zurück",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Suche",
@@ -19,6 +21,10 @@
 
   "TUTORIAL_SLIDE3_TITLE": "Los gehts",
   "TUTORIAL_SLIDE3_DESCRIPTION": "Du brauchst Hilfe? Sieh dir das README File an um mehr zu erfahren.",
+
+  "TUTORIAL_CONTINUE_BUTTON": "Fortfahren",
+
+  "WELCOME_INTRO": "Der Startpunkt für Deine nächste tolle Ionic App",
 
   "SETTINGS_TITLE": "Einstellungen",
   "SETTINGS_OPTION1": "Option 1",

@@ -4,18 +4,28 @@ _Note: the Ionic Super Starter requires Ionic CLI 2.1.18 or greater._
 
 <img src="super2.png" width="400" />
 
-The Ionic Super Starter is a batteries-included starter project for Ionic 2.x apps complete with pre-built pages, providers, , and best practices for Ionic development.
+The Ionic Super Starter is a batteries-included starter project for Ionic apps complete with pre-built pages, providers, and best practices for Ionic development.
 
 The goal of the Super Starter is to get you from zero to app store faster than before, with a set of opinions from the Ionic team around page layout, data/user management, and project structure.
 
 The way to use this starter is to pick and choose the various page types you want use, and remove the ones you don't. If you want a blank slate, this starter isn't for you (use the `blank` type instead).
 
-One of the big advances in Ionic 2 was moving from a rigid route-based navigation system to a flexible push/pop navigation system modeled off common native SDKs. We've embraced this pattern to provide a set of reusable pages that can be navigated to anywhere in the app. Take a look at the [Settings page](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/settings/settings.html#L38) for a cool example of a page navigating to itself to provide a different UI without duplicating code.
+One of the big advances in Ionic was moving from a rigid route-based navigation system to a flexible push/pop navigation system modeled off common native SDKs. We've embraced this pattern to provide a set of reusable pages that can be navigated to anywhere in the app. Take a look at the [Settings page](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/settings/settings.html#L38) for a cool example of a page navigating to itself to provide a different UI without duplicating code.
 
 ## Table of Contents
 
-1. [Pages](#pages)
-2. [i18n](#i18n) (adding languages)
+1. [Getting Started](#getting-started)
+2. [Pages](#pages)
+3. [Providers](#providers)
+4. [i18n](#i18n) (adding languages)
+
+## <a name="getting-started"></a>Getting Started
+
+To test this starter out, install the latest version of the Ionic CLI and run:
+
+```bash
+ionic start mySuperApp super
+```
 
 ## Pages
 
@@ -45,7 +55,7 @@ The `Api` provider is a simple CRUD frontend to an API. Simply put the root of y
 
 ## i18n
 
-Ionic Super Starter comes with internationalization (i18n) out of the box with [ng2-translate](https://github.com/ocombe/ng2-translate). This makes it easy to change the text used in the app by modifying only one file. 
+Ionic Super Starter comes with internationalization (i18n) out of the box with [ngx-translate](https://github.com/ngx-translate/core). This makes it easy to change the text used in the app by modifying only one file. 
 
 By default, the only language strings provided are American English.
 

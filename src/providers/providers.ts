@@ -4,8 +4,8 @@ import { Settings } from './settings';
 import { Items } from '../mocks/providers/items';
 
 export {
-  User,
-  Api,
-  Settings,
-  Items
+User,
+Api,
+Settings,
+Items
 };

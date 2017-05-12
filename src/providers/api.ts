@@ -20,7 +20,7 @@ export class Api {
     // Support easy query params for GET requests
     if (params) {
       let p = new URLSearchParams();
-      for(let k in params) {
+      for (let k in params) {
         p.set(k, params[k]);
       }
       // Set the search field if we have params and don't already have
@@ -39,8 +39,8 @@ export class Api {
     return this.http.put(this.url + '/' + endpoint, body, options);
   }
 
-  delete(endpoint: string, body: any, options?: RequestOptions) {
-    return this.http.post(this.url + '/' + endpoint, body, options);
+  delete(endpoint: string, options?: RequestOptions) {
+    return this.http.delete(this.url + '/' + endpoint, options);
   }
 
   patch(endpoint: string, body: any, options?: RequestOptions) {

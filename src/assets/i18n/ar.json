@@ -1,7 +1,10 @@
 {
+  "BACK_BUTTON_TEXT" : "رجوع",
+
   "NAME": "الاسم",
-  "PASSWORD": "كلمة السر",
   "EMAIL": "البريد الإلكتروني",
+  "USERNAME": "اسم المستخدم",
+  "PASSWORD": "كلمة السر",
   "LOGIN": "تسجيل الدخول",
   "SIGNUP": "انشاء الحساب",
 
@@ -10,6 +13,9 @@
   "TAB3_TITLE": "إعدادات",
 
   "MAP_TITLE": "خريطة",
+
+  "TUTORIAL_SKIP_BUTTON" : "تخطى",
+  "TUTORIAL_CONTINUE_BUTTON" : "استمر",
 
   "TUTORIAL_SLIDE1_TITLE": "مرحبا بكم في عدة البدء Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> عبارة عن عدة لبدء التطوير بواسطة Ionic. وهي تتميز بالعديد من الصفحات وأفضل الممارسات.",
@@ -20,21 +26,27 @@
   "TUTORIAL_SLIDE3_TITLE": "كيفية الشروع",
   "TUTORIAL_SLIDE3_DESCRIPTION": "هل تحتاج إلى مساعدة؟ يمكنك الاطلاع على README لبرنامج تعليمي كامل على Ionic Super Starter",
 
+  "TUTORIAL_SLIDE4_TITLE": "مستعد للعب؟",
+
+  "WELCOME_INTRO" : "نقطة الانطلاق لتطبيق Ionic العظيم الخاص بك",
+
   "SETTINGS_TITLE": "إعدادات",
   "SETTINGS_OPTION1": "خيار 1",
   "SETTINGS_OPTION2": "خيار 2",
   "SETTINGS_OPTION3": "خيار 3",
   "SETTINGS_OPTION4": "خيار 4",
 
+  "SETTINGS_PROFILE_BUTTON": "تعديل الملف الشخصي",
+
   "SETTINGS_PAGE_PROFILE": "تعديل الملف الشخصي",
 
   "WELCOME_TITLE": "مرحبا",
 
   "LOGIN_TITLE": "تسجيل الدخول",
-  "LOGIN_ERROR": "تسجيل الدخول مستحيل. يرجى التحقق من معلومات الحساب والمحاولة مرة أخرى.",
+  "LOGIN_ERROR": "تعذر تسجيل الدخول. يرجى التحقق من معلومات حسابك وإعادة المحاولة.",
   "LOGIN_BUTTON": "تسجيل الدخول",
   "SIGNUP_TITLE": "انشاء الحساب",
-  "SIGNUP_ERROR": "انشاء الحساب مستحيل. يرجى التحقق من معلومات الحساب والمحاولة مرة أخرى.",
+  "SIGNUP_ERROR": "تعذر إنشاء الحساب. يرجى التحقق من معلومات حسابك وإعادة المحاولة.",
   "SIGNUP_BUTTON": "انشاء الحساب",
 
   "LIST_MASTER_TITLE": "عناصر",
@@ -42,7 +54,15 @@
   "ITEM_CREATE_TITLE": "عنصر جديد",
   "ITEM_CREATE_CHOOSE_IMAGE": "إضافة صورة",
 
+  "ITEM_NAME_PLACEHOLDER" : "الاسم",
+  "ITEM_ABOUT_PLACEHOLDER" : "عن",
+
+  "DONE_BUTTON" : "انهاء",
+  "CANCEL_BUTTON" : "الغاء",
+  "DELETE_BUTTON" : "حذف",
+
   "CARDS_TITLE": "اجتماعي",
 
-  "SEARCH_TITLE": "بحث"
+  "SEARCH_TITLE": "بحث",
+  "SEARCH_PLACEHOLDER" : "ابحث في قائمة العناصر، مثل \"Donald Duck\""
 }

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "ng2-translate": "^5.0.0"
+    "@ngx-translate/core": "^6.0.1",
+    "@ngx-translate/http-loader": "0.0.3"
   }
 }
