@@ -56,7 +56,6 @@ export class ItemCreatePage {
 
     var reader = new FileReader();
     reader.onload = (readerEvent) => {
-      input.parentNode.removeChild(input);
 
       var imageData = (readerEvent.target as any).result;
       this.form.patchValue({ 'profilePic': imageData });

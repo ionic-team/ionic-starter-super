@@ -61,24 +61,30 @@ export class MyApp {
     { title: 'Search', component: SearchPage }
   ]
 
-  constructor(translate: TranslateService, platform: Platform, settings: Settings, config: Config, statusBar: StatusBar, splashScreen: SplashScreen) {
-    // Set the default language for translation strings, and the current language.
-    translate.setDefaultLang('en');
+  constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, statusBar: StatusBar, splashScreen: SplashScreen) {
 
-    if (translate.getBrowserLang() !== undefined) {
-      translate.use(translate.getBrowserLang());
-    }
-
-
-    translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
-      config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
-    });
+    this.initTranslate();
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+    });
+  }
+
+  initTranslate() {
+    // Set the default language for translation strings, and the current language.
+    this.translate.setDefaultLang('en');
+
+    if (this.translate.getBrowserLang() !== undefined) {
+      this.translate.use(this.translate.getBrowserLang());
+    } else {
+      this.translate.use('en'); // Set your language here
+    }
+
+    this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
+      this.config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
     });
   }
 
