@@ -1,6 +1,6 @@
 # The Ionic Super Starter 🎮
 
-_Note: the Ionic Super Starter requires Ionic CLI 2.1.18 or greater._
+_Note: the Ionic Super Starter requires Ionic CLI 3._
 
 <img src="super2.png" width="400" />
 
