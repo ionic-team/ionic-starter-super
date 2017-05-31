@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
-import { MainPage } from '../../pages/pages';
+import { MainPage } from '../pages';
 
 import { User } from '../../providers/providers';
 
 import { TranslateService } from '@ngx-translate/core';
 
-
+@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
