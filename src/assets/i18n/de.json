@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Zurück",
+  "BACK_BUTTON_TEXT": "Zurück",
 
   "NAME": "Name",
   "PASSWORD": "Passwort",
@@ -7,7 +7,6 @@
   "LOGIN": "Anmelden",
   "SIGNUP": "Registrieren",
   "CANCEL_BUTTON": "Schließen",
-  "BACK_BUTTON_TEXT": "Zurück",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Suche",
