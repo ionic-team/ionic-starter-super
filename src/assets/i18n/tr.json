@@ -1,4 +1,6 @@
 {
+  "BACK_BUTTON_TEXT" : "Geri",
+  
   "NAME": "İsim",
   "PASSWORD": "Şifre",
   "EMAIL": "Email",
