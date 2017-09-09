@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, MenuController, NavController } from 'ionic-angular';
+import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -17,7 +17,7 @@ export interface Slide {
 export class TutorialPage {
   slides: Slide[];
   showSkip = true;
-  dir:string = 'ltr';
+  dir: string = 'ltr';
 
   constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
     this.dir = platform.dir();

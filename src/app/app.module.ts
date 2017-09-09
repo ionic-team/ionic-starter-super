@@ -42,21 +42,7 @@ export function provideSettings(storage: Storage) {
 
 @NgModule({
   declarations: [
-    MyApp,
-    CardsPage,
-    ContentPage,
-    ItemCreatePage,
-    ItemDetailPage,
-    ListMasterPage,
-    LoginPage,
-    MapPage,
-    MenuPage,
-    SearchPage,
-    SettingsPage,
-    SignupPage,
-    TabsPage,
-    TutorialPage,
-    WelcomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -73,21 +59,7 @@ export function provideSettings(storage: Storage) {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    CardsPage,
-    ContentPage,
-    ItemCreatePage,
-    ItemDetailPage,
-    ListMasterPage,
-    LoginPage,
-    MapPage,
-    MenuPage,
-    SearchPage,
-    SettingsPage,
-    SignupPage,
-    TabsPage,
-    TutorialPage,
-    WelcomePage
+    MyApp
   ],
   providers: [
     Api,
