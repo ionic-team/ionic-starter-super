@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Späť",
+  "BACK_BUTTON_TEXT": "Späť",
 
   "NAME": "Meno",
   "EMAIL": "Email",
@@ -14,8 +14,8 @@
 
   "MAP_TITLE": "Mapa",
 
-  "TUTORIAL_SKIP_BUTTON" : "Preskočiť",
-  "TUTORIAL_CONTINUE_BUTTON" : "Pokračovať",
+  "TUTORIAL_SKIP_BUTTON": "Preskočiť",
+  "TUTORIAL_CONTINUE_BUTTON": "Pokračovať",
 
   "TUTORIAL_SLIDE1_TITLE": "Vitajte v Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> kompletný Ionic starter projekt s mnohými predkonfigurovanými stránkami a doporučenými postupmi.",
@@ -30,7 +30,7 @@
 
 
 
-  "WELCOME_INTRO" : "Prvý krok vašej novej Ionic aplikácie.",
+  "WELCOME_INTRO": "Prvý krok vašej novej Ionic aplikácie.",
 
   "SETTINGS_TITLE": "Nastavenia",
   "SETTINGS_OPTION1": "Možnosť 1",
@@ -38,7 +38,7 @@
   "SETTINGS_OPTION3": "Možnosť 3",
   "SETTINGS_OPTION4": "Možnosť 4",
 
-  "SETTINGS_PROFILE_BUTTON" : "Upraviť profil",
+  "SETTINGS_PROFILE_BUTTON": "Upraviť profil",
 
 
   "SETTINGS_PAGE_PROFILE": "Profil",
@@ -66,15 +66,15 @@
 
 
 
-  "ITEM_NAME_PLACEHOLDER" : "Názov",
-  "ITEM_ABOUT_PLACEHOLDER" : "O položke",
+  "ITEM_NAME_PLACEHOLDER": "Názov",
+  "ITEM_ABOUT_PLACEHOLDER": "O položke",
 
-  "DONE_BUTTON" : "Hotovo",
-  "CANCEL_BUTTON" : "Zrušiť",
-  "DELETE_BUTTON" : "Vymazať",
+  "DONE_BUTTON": "Hotovo",
+  "CANCEL_BUTTON": "Zrušiť",
+  "DELETE_BUTTON": "Vymazať",
 
   "CARDS_TITLE": "Soc. siete",
 
   "SEARCH_TITLE": "Hľadať",
-  "SEARCH_PLACEHOLDER" : "Napíšte hľadaný výraz, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Napíšte hľadaný výraz, e.g. \"Donald Duck\""
 }

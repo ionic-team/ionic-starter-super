@@ -4,8 +4,8 @@ import { Settings } from './settings/settings';
 import { User } from './user/user';
 
 export {
-Api,
-Items,
-Settings,
-User,
+    Api,
+    Items,
+    Settings,
+    User
 };

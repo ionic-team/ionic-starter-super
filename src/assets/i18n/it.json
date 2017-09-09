@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Indietro",
+  "BACK_BUTTON_TEXT": "Indietro",
 
   "NAME": "Nome",
   "EMAIL": "Email",
@@ -14,8 +14,8 @@
 
   "MAP_TITLE": "Mappa",
 
-  "TUTORIAL_SKIP_BUTTON" : "Salta",
-  "TUTORIAL_CONTINUE_BUTTON" : "Continua",
+  "TUTORIAL_SKIP_BUTTON": "Salta",
+  "TUTORIAL_CONTINUE_BUTTON": "Continua",
 
   "TUTORIAL_SLIDE1_TITLE": "Benvenuti in Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> è un applicazione di partenza per Ionic che contiene molte pagine di esempio già pronte realizzate seguendo delle best practices.",
@@ -28,7 +28,7 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Pronti ad iniziare?",
 
-  "WELCOME_INTRO" : "Il punto di partenza per la tua prossima applicazione Ionic",
+  "WELCOME_INTRO": "Il punto di partenza per la tua prossima applicazione Ionic",
 
   "SETTINGS_TITLE": "Impostazioni",
   "SETTINGS_OPTION1": "Opzione 1",
@@ -36,7 +36,7 @@
   "SETTINGS_OPTION3": "Opzione 3",
   "SETTINGS_OPTION4": "Opzione 4",
 
-  "SETTINGS_PROFILE_BUTTON" : "Modifica Profilo",
+  "SETTINGS_PROFILE_BUTTON": "Modifica Profilo",
 
   "SETTINGS_PAGE_PROFILE": "Modifica Profilo",
 
@@ -54,15 +54,15 @@
   "ITEM_CREATE_TITLE": "Nuovo elemento",
   "ITEM_CREATE_CHOOSE_IMAGE": "Aggiungi immagine",
 
-  "ITEM_NAME_PLACEHOLDER" : "Nome",
-  "ITEM_ABOUT_PLACEHOLDER" : "Informazioni",
+  "ITEM_NAME_PLACEHOLDER": "Nome",
+  "ITEM_ABOUT_PLACEHOLDER": "Informazioni",
 
-  "DONE_BUTTON" : "Fatto",
-  "CANCEL_BUTTON" : "Annulla",
-  "DELETE_BUTTON" : "Elimina",
+  "DONE_BUTTON": "Fatto",
+  "CANCEL_BUTTON": "Annulla",
+  "DELETE_BUTTON": "Elimina",
 
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Ricerca",
-  "SEARCH_PLACEHOLDER" : "Trova elementi in lista, ex. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\""
 }

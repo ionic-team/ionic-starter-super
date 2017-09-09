@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Dzoka Shure",
+  "BACK_BUTTON_TEXT": "Dzoka Shure",
 
   "NAME": "Zita",
   "EMAIL": "Tsambambozha",
@@ -14,8 +14,8 @@
 
   "MAP_TITLE": "Mepu",
 
-  "TUTORIAL_SKIP_BUTTON" : "Darika",
-  "TUTORIAL_CONTINUE_BUTTON" : "Enderera",
+  "TUTORIAL_SKIP_BUTTON": "Darika",
+  "TUTORIAL_CONTINUE_BUTTON": "Enderera",
 
   "TUTORIAL_SLIDE1_TITLE": "Tinokugachirai ku Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> i Ionic Starter yakarungwa zvakakwanira nemapeji akagadzirwa kare nenzira dzakanaka dzinotenderwa",
@@ -28,7 +28,7 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Wagadzirira kutamba?",
 
-  "WELCOME_INTRO" : "Pekutangira kwako kugadzira jikichidzo guru yeIonic",
+  "WELCOME_INTRO": "Pekutangira kwako kugadzira jikichidzo guru yeIonic",
 
   "SETTINGS_TITLE": "Gadziro",
   "SETTINGS_OPTION1": "Sarudzo yekutanga",
@@ -36,7 +36,7 @@
   "SETTINGS_OPTION3": "Sarudzo yechitatu",
   "SETTINGS_OPTION4": "Sarudzo yechina",
 
-  "SETTINGS_PROFILE_BUTTON" : "Pepeta Profile",
+  "SETTINGS_PROFILE_BUTTON": "Pepeta Profile",
 
   "SETTINGS_PAGE_PROFILE": "Pepeta Profile",
 
@@ -54,15 +54,15 @@
   "ITEM_CREATE_TITLE": "Aitemu itsva",
   "ITEM_CREATE_CHOOSE_IMAGE": "Wedzera mufananidzo",
 
-  "ITEM_NAME_PLACEHOLDER" : "Zita",
-  "ITEM_ABOUT_PLACEHOLDER" : "Nezve",
+  "ITEM_NAME_PLACEHOLDER": "Zita",
+  "ITEM_ABOUT_PLACEHOLDER": "Nezve",
 
-  "DONE_BUTTON" : "aita",
-  "CANCEL_BUTTON" : "kanzura",
-  "DELETE_BUTTON" : "Dzima",
+  "DONE_BUTTON": "aita",
+  "CANCEL_BUTTON": "kanzura",
+  "DELETE_BUTTON": "Dzima",
 
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Tsvaga",
-  "SEARCH_PLACEHOLDER" : "Tsvaga mumaaitemu sokuti \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Tsvaga mumaaitemu sokuti \"Donald Duck\""
 }

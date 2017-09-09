@@ -1,23 +1,20 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { Http, HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule, Http } from '@angular/http';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { Storage, IonicStorageModule } from '@ionic/storage';
-
-import { MyApp } from './app.component';
-
-import { Api } from '../providers/providers';
-import { Items } from '../mocks/providers/items';
-import { Settings } from '../providers/providers';
-import { User } from '../providers/providers';
-
 import { Camera } from '@ionic-native/camera';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { IonicStorageModule, Storage } from '@ionic/storage';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+import { Items } from '../mocks/providers/items';
+import { Settings } from '../providers/providers';
+import { User } from '../providers/providers';
+import { Api } from '../providers/providers';
+import { MyApp } from './app.component';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.

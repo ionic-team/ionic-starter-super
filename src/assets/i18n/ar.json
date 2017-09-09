@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "رجوع",
+  "BACK_BUTTON_TEXT": "رجوع",
 
   "NAME": "الاسم",
   "EMAIL": "البريد الإلكتروني",
@@ -14,8 +14,8 @@
 
   "MAP_TITLE": "خريطة",
 
-  "TUTORIAL_SKIP_BUTTON" : "تخطى",
-  "TUTORIAL_CONTINUE_BUTTON" : "استمر",
+  "TUTORIAL_SKIP_BUTTON": "تخطى",
+  "TUTORIAL_CONTINUE_BUTTON": "استمر",
 
   "TUTORIAL_SLIDE1_TITLE": "مرحبا بكم في عدة البدء Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> عبارة عن عدة لبدء التطوير بواسطة Ionic. وهي تتميز بالعديد من الصفحات وأفضل الممارسات.",
@@ -28,7 +28,7 @@
 
   "TUTORIAL_SLIDE4_TITLE": "مستعد للعب؟",
 
-  "WELCOME_INTRO" : "نقطة الانطلاق لتطبيق Ionic العظيم الخاص بك",
+  "WELCOME_INTRO": "نقطة الانطلاق لتطبيق Ionic العظيم الخاص بك",
 
   "SETTINGS_TITLE": "إعدادات",
   "SETTINGS_OPTION1": "خيار 1",
@@ -54,15 +54,15 @@
   "ITEM_CREATE_TITLE": "عنصر جديد",
   "ITEM_CREATE_CHOOSE_IMAGE": "إضافة صورة",
 
-  "ITEM_NAME_PLACEHOLDER" : "الاسم",
-  "ITEM_ABOUT_PLACEHOLDER" : "عن",
+  "ITEM_NAME_PLACEHOLDER": "الاسم",
+  "ITEM_ABOUT_PLACEHOLDER": "عن",
 
-  "DONE_BUTTON" : "انهاء",
-  "CANCEL_BUTTON" : "الغاء",
-  "DELETE_BUTTON" : "حذف",
+  "DONE_BUTTON": "انهاء",
+  "CANCEL_BUTTON": "الغاء",
+  "DELETE_BUTTON": "حذف",
 
   "CARDS_TITLE": "اجتماعي",
 
   "SEARCH_TITLE": "بحث",
-  "SEARCH_PLACEHOLDER" : "ابحث في قائمة العناصر، مثل \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "ابحث في قائمة العناصر، مثل \"Donald Duck\""
 }

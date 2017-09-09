@@ -1,5 +1,5 @@
 {
-  "BACK_BUTTON_TEXT" : "Back",
+  "BACK_BUTTON_TEXT": "Back",
 
   "NAME": "Name",
   "EMAIL": "Email",
@@ -14,8 +14,8 @@
 
   "MAP_TITLE": "Map",
 
-  "TUTORIAL_SKIP_BUTTON" : "Skip",
-  "TUTORIAL_CONTINUE_BUTTON" : "Continue",
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
 
   "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
@@ -28,7 +28,7 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
 
-  "WELCOME_INTRO" : "The starting point for your next great Ionic app",
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
 
   "SETTINGS_TITLE": "Settings",
   "SETTINGS_OPTION1": "Option 1",
@@ -36,7 +36,7 @@
   "SETTINGS_OPTION3": "Option 3",
   "SETTINGS_OPTION4": "Option 4",
 
-  "SETTINGS_PROFILE_BUTTON" : "Edit Profile",
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
 
   "SETTINGS_PAGE_PROFILE": "Edit Profile",
 
@@ -54,15 +54,15 @@
   "ITEM_CREATE_TITLE": "New Item",
   "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
 
-  "ITEM_NAME_PLACEHOLDER" : "Name",
-  "ITEM_ABOUT_PLACEHOLDER" : "About",
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
 
-  "DONE_BUTTON" : "Done",
-  "CANCEL_BUTTON" : "Cancel",
-  "DELETE_BUTTON" : "Delete",
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
 
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER" : "Search the items list, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
 }

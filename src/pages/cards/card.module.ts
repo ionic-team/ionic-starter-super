@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { CardsPage } from './cards';
 import { TranslateModule } from '@ngx-translate/core';
+import { IonicPageModule } from 'ionic-angular';
+
+import { CardsPage } from './cards';
 
 @NgModule({
   declarations: [

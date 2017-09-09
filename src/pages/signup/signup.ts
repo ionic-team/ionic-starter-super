@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers/providers';
-
-import { TranslateService } from '@ngx-translate/core';
+import { MainPage } from '../pages';
 
 @IonicPage()
 @Component({
@@ -36,10 +36,10 @@ export class SignupPage {
   doSignup() {
     // Attempt to login in through our User service
     this.user.signup(this.account).subscribe((resp) => {
-      this.navCtrl.push('MainPage');
+      this.navCtrl.push(MainPage);
     }, (err) => {
 
-      this.navCtrl.push('MainPage'); // TODO: Remove this when you add your signup endpoint
+      this.navCtrl.push(MainPage);
 
       // Unable to sign up
       let toast = this.toastCtrl.create({

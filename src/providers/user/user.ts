@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import { Api } from '../api/api';
-
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
+
+import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+
+import { Api } from '../api/api';
 
 /**
  * Most apps have the concept of a User. This is a simple provider
