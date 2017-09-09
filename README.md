@@ -57,8 +57,6 @@ The `Api` provider is a simple CRUD frontend to an API. Simply put the root of y
 
 Ionic Super Starter comes with internationalization (i18n) out of the box with [ngx-translate](https://github.com/ngx-translate/core). This makes it easy to change the text used in the app by modifying only one file. 
 
-By default, the only language strings provided are American English.
-
 ### Adding Languages
 
 To add new languages, add new files to the `src/assets/i18n` directory, following the pattern of LANGCODE.json where LANGCODE is the language/locale code (ex: en/gb/de/es/etc.).

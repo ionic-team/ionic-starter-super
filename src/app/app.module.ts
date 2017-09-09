@@ -40,42 +40,24 @@ export function provideSettings(storage: Storage) {
   });
 }
 
-
-/**
- * The Pages array lists all of the pages we want to use in our app.
- * We then take these pages and inject them into our NgModule so Angular
- * can find them. As you add and remove pages, make sure to keep this list up to date.
- */
-let pages = [
-  MyApp
-];
-
-export function declarations() {
-  return pages;
-}
-
-export function entryComponents() {
-  return pages;
-}
-
-export function providers() {
-  return [
-    Api,
-    Items,
-    User,
-    Camera,
-    GoogleMaps,
-    SplashScreen,
-    StatusBar,
-
-    { provide: Settings, useFactory: provideSettings, deps: [Storage] },
-    // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
-  ];
-}
-
 @NgModule({
-  declarations: declarations(),
+  declarations: [
+    MyApp,
+    CardsPage,
+    ContentPage,
+    ItemCreatePage,
+    ItemDetailPage,
+    ListMasterPage,
+    LoginPage,
+    MapPage,
+    MenuPage,
+    SearchPage,
+    SettingsPage,
+    SignupPage,
+    TabsPage,
+    TutorialPage,
+    WelcomePage
+  ],
   imports: [
     BrowserModule,
     HttpModule,
@@ -90,7 +72,34 @@ export function providers() {
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
-  entryComponents: entryComponents(),
-  providers: providers()
+  entryComponents: [
+    MyApp,
+    CardsPage,
+    ContentPage,
+    ItemCreatePage,
+    ItemDetailPage,
+    ListMasterPage,
+    LoginPage,
+    MapPage,
+    MenuPage,
+    SearchPage,
+    SettingsPage,
+    SignupPage,
+    TabsPage,
+    TutorialPage,
+    WelcomePage
+  ],
+  providers: [
+    Api,
+    Items,
+    User,
+    Camera,
+    GoogleMaps,
+    SplashScreen,
+    StatusBar,
+    { provide: Settings, useFactory: provideSettings, deps: [Storage] },
+    // Keep this to enable Ionic's runtime error handling during development
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ]
 })
 export class AppModule { }
