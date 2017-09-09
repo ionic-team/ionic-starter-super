@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+
 import { TranslateService } from '@ngx-translate/core';
 
 import { Tab1Root } from '../pages';
 import { Tab2Root } from '../pages';
 import { Tab3Root } from '../pages';
 
+@IonicPage()
 @Component({
   selector: 'page-tabs',
   templateUrl: 'tabs.html'

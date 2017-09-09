@@ -1,16 +1,17 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { IonicPage, NavController, Platform } from 'ionic-angular';
 
 import { GoogleMaps, GoogleMap, GoogleMapsEvent, LatLng, CameraPosition } from '@ionic-native/google-maps';
 
 declare var google: any;
 
+@IonicPage()
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html'
 })
 export class MapPage {
-  
+
   @ViewChild('map') map;
 
   constructor(private googleMaps: GoogleMaps, public navCtrl: NavController, public platform: Platform) { }
