@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 
 import { Item } from '../../models/item';
 
@@ -14,7 +13,7 @@ export class Items {
   };
 
 
-  constructor(public http: Http) {
+  constructor() {
     let items = [
       {
         "name": "Burt Bear",
