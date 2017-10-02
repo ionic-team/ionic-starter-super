@@ -1,8 +1,6 @@
-import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 
 import { Api } from '../api/api';
 
@@ -20,7 +18,7 @@ import { Api } from '../api/api';
  *   user: {
  *     // User fields your app needs, like "id", "name", "email", etc.
  *   }
- * }
+ * }Ø
  * ```
  *
  * If the `status` field is not `success`, then an error is detected and returned.
@@ -29,8 +27,7 @@ import { Api } from '../api/api';
 export class User {
   _user: any;
 
-  constructor(public http: Http, public api: Api) {
-  }
+  constructor(public api: Api) { }
 
   /**
    * Send a POST request to our login endpoint with the data
@@ -39,17 +36,15 @@ export class User {
   login(accountInfo: any) {
     let seq = this.api.post('login', accountInfo).share();
 
-    seq
-      .map(res => res.json())
-      .subscribe(res => {
-        // If the API returned a successful response, mark the user as logged in
-        if (res.status == 'success') {
-          this._loggedIn(res);
-        } else {
-        }
-      }, err => {
-        console.error('ERROR', err);
-      });
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._loggedIn(res);
+      } else {
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
 
     return seq;
   }
@@ -61,16 +56,14 @@ export class User {
   signup(accountInfo: any) {
     let seq = this.api.post('signup', accountInfo).share();
 
-    seq
-      .map(res => res.json())
-      .subscribe(res => {
-        // If the API returned a successful response, mark the user as logged in
-        if (res.status == 'success') {
-          this._loggedIn(res);
-        }
-      }, err => {
-        console.error('ERROR', err);
-      });
+    seq.subscribe((res: any) => {
+      // If the API returned a successful response, mark the user as logged in
+      if (res.status == 'success') {
+        this._loggedIn(res);
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
 
     return seq;
   }
