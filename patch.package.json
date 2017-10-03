@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@ionic-native/camera": "4.3.0",
-    "@ionic-native/google-maps": "4.3.0",
     "@ngx-translate/core": "8.0.0",
     "@ngx-translate/http-loader": "^2.0.0"
   }
